@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale= no">
+    <link rel="stylesheet" href="themes/mytema.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />  
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="jquery-1.11.1.min.js"></script>
+    <script src="asset/jquery.mobile-1.4.5.min.js"></script>
+
+    <style type="text/css">
+    #pag1 {
+      background: transparent url(asset/1.png);
+      margin: 0;
+      padding: 0;
+      margin-right: 10px;
+      width: fit-content;
+    }
+    #pag2 {
+      background: transparent url(asset/1.png);
+      margin: 0;
+      padding: 0;
+      margin-right: 10px;
+      width: fit-content;
+    }
+    #pag6 {
+      background: transparent url(asset/1.png);
+      margin: 0;
+      padding: 0;
+      margin-right: 10px;
+      width: fit-content;
+    }
+    #pag4 {
+      background: transparent url(asset/1.png);
+      margin: 0;
+      padding: 0;
+      margin-right: 10px;
+      width: fit-content;
+    }
+    #right-panel{
+      background: transparent;
+    }
+    #pie{
+      background: rgba(45, 35, 238, 0.344);
+      text-align: center;
+    }
+    #pie1{
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+   font-size: 8px;
+    color: rgb(247, 236, 236);
+    }
+    #b1{
+    box-shadow: inset rgb(21, 6, 51) 0 0 10px;
+    background: rgb(66, 13, 172);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    }
+    #logo{
+      display: block;
+      width:40%;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 1px;
+     transition: 0.25s;
+    }
+    #b2{
+     
+      display: block;
+      width: 80%;
+     margin: auto;
+     cursor: pointer;
+     transition: 0.25s;
+    }
+    #logo:hover{
+    rotate: rotate(360deg);
+        
+    }
+    #botones{
+      display: inline-block;
+      margin: auto;
+      width: 30%;
+      padding: 5px;
+    }
+    #botdiv{
+      margin-left: 80px;
+
+    }
+    #btn{
+      
+      background-image: url(asset/icono1.png)
+        
+    }
+    #barrita{
+      background: rgb(243, 117, 13);
+      color: transparent;
+    }
+  #nav1{
+    background: rgb(183, 236, 238);
+    
+  }
+  #nav2{
+    background:rgb(215, 254, 255); ;
+  }
+  #na1{
+    background: rgb(208, 208, 245);
+   
+  }
+  .mover {
+transition: 0.25s;
+  }
+  .mover  a :hover{
+    transform: scale(1,1);
+    -webkit-transform: scale(1.2);
+
+  }
+ .tra{
+    position: absolute;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    margin-left:-25px;
+    transition: all .25s;
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0.8;
+    z-index: 1;
+
+ }
+ .tra:hover{
+   opacity: 1;
+ }
+ .tra:hover ~ #lam{
+   display: inline-block;
+   margin-left: 150px;
+ }
+ #lam{
+   position: absolute;
+   width: 50%;
+   /*display: none;*/
+   margin-left:-100px;
+   margin-top: 30px;
+
+  }
+    </style>
+</head>
+<body>
+   <div data-role="page" id="pag1" data-theme="a" >
+    <div data-role="panel" id="right-panel" data-display="overlay" data-position="right">
+      <ul data-role="listview" data-icon="false" data-theme="a">
+        <li data-icon="delete"><a href="#" data-rel="close" id="na1">Cerrar</a></li>
+        <li data-role="list-divider">Opciones</li>
+          <li data-icon="arrow-r"><a href="#pag2" id="nav1">Para los niños</a></li>
+          <li data-icon="arrow-r"><a href="#pag6" id="nav2">Para Maestros</a></li>
+          <li data-icon="gear"><a href="#pag4" id="nav1">Ayuda</a></li>
+          <li data-icon="star"><a href="http://t.me/apknoriel" id="nav2">e-Learning Telegram</a></li>
+          <li data-icon="mail"><a href="mailto:norielisy@nauta.cu" id="nav1">Soporte</a></li>
+      </ul>
+  </div>
+
+     <div data-role="header" id="barrita" data-theme="a" class="wow fadeInDown" data-wow-delay="0.2s">
+      
+       <a href="#right-panel" data-icon="bullets" data-role="button" class="ui-btn-icon-left ui-btn-icon-notext ui-corner-all" >Menú</a>
+     
+      </div>   
+           <div data-role="content" class="mover"> 
+        <img src="asset/2.png" alt="logo" id="logo">
+       <a href="#pag6" id="b1"><img src="asset/iconoagenda.png" id="b2"></a>
+         <a href="#pag2" id="b1"><img src="asset/iconcontacto.png" id="b2"></a>
+        <a href="#pag4" id="b1"><img src="asset/iconoayuda.png" id="b2"></a>
+            
+      </div>    
+     
+
+    <div data-role="footer" id="barrita" data-position="fixed" data-theme="a">
+
+    
+      </div> 
+    </div>       
+  </div>
+
+<!--pagina 5-->
+
+  </div>       
+</div>
+
+
+
+<!--Paigna 2-->
+<div data-role="page" id="pag2" data-theme="a" >
+  <div data-role="panel" id="right-panel" data-display="overlay" data-position="right">
+    <ul data-role="listview" data-icon="false" data-theme="a">
+      <li data-icon="delete"><a href="#" data-rel="close" id="na1">Cerrar</a></li>
+      <li data-role="list-divider">Opciones</li>
+      <li data-icon="arrow-r"><a href="#pag1" id="nav1">Inicio</a></li>
+        <li data-icon="arrow-r"><a href="#pag6" id="nav1">Para los niños</a></li>
+        <li data-icon="arrow-r"><a href="#pag2" id="nav2">Para Maestros</a></li>
+        <li data-icon="gear"><a href="#pag4" id="nav1">Ayuda</a></li>
+        <li data-icon="star"><a href="http://t.me/apknoriel" id="nav2">e-Learning Telegram</a></li>
+        <li data-icon="mail"><a href="mailto:norielisy@nauta.cu" id="nav1">Soporte</a></li>
+    </ul>
+</div>
+
+<div data-role="header" id="barrita" data-theme="a" class="wow fadeInDown" data-wow-delay="0.2s">
+  <a href="index.html" data-rel="back" data-role="button" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-notext ui-btn-icon-left ui-icon-back">Atrás</a>  
+  <a href="#right-panel" data-icon="bullets" data-role="button" class="ui-btn-right ui-btn-icon-notext ui-corner-all" >Menú</a>
+
+ </div>   
+      <div data-role="content" class="mover"> 
+      <img src="asset/cuadro.png" class="tra"></a>
+      <a href="#pag2" ><img src="asset/lamina.png" id="lam"></a>
+     <div data-role="content" class="mover">
+      <a href="#pag4" id="b1"><img src="asset/iconoayuda.png" style="display: none;"></a>
+       </div>
+ </div>    
+            
+      </div>    
+         
+ </div>    
+
+
+
+
+ </div> 
+</div>       
+<!--pagina 4-->
+
+<!--pagina ninos-->
+<div data-role="page" id="pag6" data-theme="a" >
+  <div data-role="panel" id="right-panel" data-display="overlay" data-position="right">
+    <ul data-role="listview" data-icon="false" data-theme="a">
+      <li data-icon="delete"><a href="#" data-rel="close" id="na1">Cerrar</a></li>
+      <li data-role="list-divider">Opciones</li>
+      <li data-icon="arrow-r"><a href="#pag1" id="nav1">Inicio</a></li>
+        <li data-icon="arrow-r"><a href="#pag6" id="nav1">Para los niños</a></li>
+        <li data-icon="arrow-r"><a href="#pag2" id="nav2">Para Maestros</a></li>
+        <li data-icon="gear"><a href="#pag4" id="nav1">Ayuda</a></li>
+        <li data-icon="star"><a href="http://t.me/apknoriel" id="nav2">e-Learning Telegram</a></li>
+        <li data-icon="mail"><a href="mailto:norielisy@nauta.cu" id="nav1">Soporte</a></li>
+    </ul>
+</div>
+
+<div data-role="header" id="barrita" data-theme="a" class="wow fadeInDown" data-wow-delay="0.2s">
+  <a href="" data-rel="back" data-role="button" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-notext ui-btn-icon-left ui-icon-back">Atrás</a>  
+  <a href="#right-panel" data-icon="bullets" data-role="button" class="ui-btn-right ui-btn-icon-notext ui-corner-all" >Menú</a>
+ <h3>Para los niños</h3>
+ </div>   
+      <div data-role="content" class="mover"> 
+        <br>
+      <a href="asset/bosquejos_de_nios/index.html" rel= "external" id="b1"><img src="asset/boton10.png" id="b2"></a>
+     <br>
+      <a href="asset/actividades/evangelismo/index.html" rel="external" id="b1"><img src="asset/botonEvangelismo.png" id="b2"></a>
+      <!--<a href="#" id="b1"><img src="asset/musicaninos.png" id="b2"></a>-->
+ </div>    
+
+
+<div data-role="footer" id="barrita" data-position="fixed" data-theme="a">
+ <h6 id="">Maestros de niños</h6> 
+
+ </div> 
+</div>   
+<!--fin pagina de ninos-->
+
+
+<div data-role="page" id="pag4" data-theme="a">
+  <div data-role="header" id="barrita">
+    <a href="" data-rel="back" data-role="button" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-notext ui-btn-icon-left ui-icon-back">Cerrar</a>
+    <a href="mailto:norielisy@nauta.cu"  data-role="button" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-rigth ui-btn-icon-notext ui-btn-icon-left ui-icon-gear">Soporte</a>
+    <h2>Ayuda</h2>
+  </div>
+  <div data-role="content">
+    <img src="asset/iconoayuda.png" id="b2" alt="ayuda">
+    <div data-role="collapsible-set">
+			<div data-role="collapsible" data-collapsed="true">
+     
+      <h3>¿Cómo usar la aplicación?</h3>
+      <p> Esta ayuda es básica para usted. La aplicación no es para uso de los niños, es para uso de los maestros de niños.
+        Usted elija que apartado desea, en "Para los niños" usted podrá leer clases hechas para impartir que te servirán de 
+      mucha ayuda para momentos tensos. en el apartado "Para Maestros" habrán recursos para su preparación personal y documentos efectivos para su preparación </p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+      <h3>Recursos</h3>
+         <p> Los recursos de la apk son recursos sin derechos de autor. Son recursos evangélicos para trabajar con niños</p>
+      </div>
+     <div data-role="collapsible" data-collapsed="true">
+         <h3>¿Puedo pedir mi curso?</h3>
+    <p> Si. Usted puede pedir su curso. Si lo tenemos en la base de datos se los hacemos llegar.</p>
+    </div>
+    <div data-role="collapsible" data-collapsed="true">
+    <h3>¿Cómo puedo apoyar?</h3>
+    <p>Existen muchas formas de apoyar este proyecto. Usted ore por nosotros, aliente al grupo de trabajo y comente a otros del trabajo</p>
+    </div>
+    <div data-role="collapsible" data-collapsed="true">
+    <h3>¿Qué es soporte?</h3>
+    <p>Soporte es el correo del creador de la apk para informar errores o agradecer el trabajo</p> 
+    <img src="asset/gif.gif" alt="logo" id="logo">
+   </div>  
+   <img src="asset/NINOSGIF.gif" alt="logo" id="logo">
+  </div>
+ 
+</div>
+
+
+</body>
+</html>
